@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css"/>
+    </head>
+    <body>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Please fill out the form</p>
+        <form method="post">
+            <label for="name-label">Name: <input id="name-label" name="name" type="text" required placeholder="Enter name"/></label>
+            <label for="email-label">Email: <input id="email-label" name="email" type="email" required placeholder="Enter email"/></label>
+            <label for="age-label">Age: <input id="age-label" name="age" type="text" min="0" max="120" placeholder="Enter age"/></label>
+            <label>Rate the survey form</label>
+            <select id="dropdown" name="dropdown">
+                <option value="">(Select one)</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+        </form>
+    </body>
+</html>
