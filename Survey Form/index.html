@@ -7,21 +7,56 @@
         <link rel="stylesheet" href="styles.css"/>
     </head>
     <body>
-        <h1 id="title">Survey Form</h1>
-        <p id="description">Please fill out the form</p>
-        <form method="post">
-            <label for="name-label">Name: <input id="name-label" name="name" type="text" required placeholder="Enter name"/></label>
-            <label for="email-label">Email: <input id="email-label" name="email" type="email" required placeholder="Enter email"/></label>
-            <label for="age-label">Age: <input id="age-label" name="age" type="text" min="0" max="120" placeholder="Enter age"/></label>
-            <label>Rate the survey form</label>
-            <select id="dropdown" name="dropdown">
-                <option value="">(Select one)</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-            </select>
-        </form>
+        <div class="form-box">
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Please fill out the form</p>
+            <form method="post">
+                <fieldset>
+                    <label for="name-label">Name 
+                        <br>
+                        <input id="name-label" name="name" type="text" required placeholder="Enter name"/>
+                    </label>
+                    <label for="email-label">Email 
+                        <br>
+                        <input id="email-label" name="email" type="email" required placeholder="Enter email"/>
+                    </label>
+                    <label for="age-label">Age 
+                        <br>
+                        <input id="age-label" name="age" type="text" min="0" max="120" placeholder="Enter age"/>
+                    </label>
+                </fieldset>
+                <label>Rate the survey form
+                    <br>
+                    <select class="dropdown" id="dropdown" name="dropdown">
+                        <option value="">(Select one)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                </label>
+                <label>What could be improved?
+                    <br>
+                    <input id="improve-1" type="checkbox" name="improve-1"/><label class="inline">Colour</label>
+                    <br>
+                    <input id="improve-2" type="checkbox" name="improve-2"/><label class="inline">Text</label>
+                    <br>
+                    <input id="improve-3" type="checkbox" name="improve-3"/><label class="inline">Layout</label>
+                    <br>
+                    <input id="improve-4" type="checkbox" name="improve-4"/><label class="inline">Functionality</label>
+                    <br>
+                    <input id="improve-5" type="checkbox" name="improve-5"/><label class="inline">Other</label>
+                    <br>
+                    <input id="improve-6" type="checkbox" name="improve-6"/><label class="inline">None</label>
+                    <br>
+                </label>
+                <label for="suggestions">Any comments or suggestions?
+                    <br>
+                    <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I would've liked more colour..."></textarea>
+                </label>
+                <input type="submit" value="Submit"/>
+            </form>
+        </div>
     </body>
 </html>
