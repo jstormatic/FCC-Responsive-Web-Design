@@ -10,19 +10,19 @@
         <div class="form-box">
             <h1 id="title">Survey Form</h1>
             <p id="description">Please fill out the form</p>
-            <form method="post">
+            <form id="survey-form" method="post">
                 <fieldset>
-                    <label for="name-label">Name 
+                    <label id="name-label">Name 
                         <br>
-                        <input id="name-label" name="name" type="text" required placeholder="Enter name"/>
+                        <input id="name" name="name" type="text" required placeholder="Enter name"/>
                     </label>
-                    <label for="email-label">Email 
+                    <label id="email-label">Email 
                         <br>
-                        <input id="email-label" name="email" type="email" required placeholder="Enter email"/>
+                        <input id="email" name="email" type="email" required placeholder="Enter email"/>
                     </label>
-                    <label for="age-label">Age 
+                    <label id="number-label">Age 
                         <br>
-                        <input id="age-label" name="age" type="text" min="0" max="120" placeholder="Enter age"/>
+                        <input id="number" name="age" type="number" min="0" max="120" placeholder="Enter age"/>
                     </label>
                 </fieldset>
                 <label>Rate the survey form
@@ -38,24 +38,31 @@
                 </label>
                 <label>What could be improved?
                     <br>
-                    <input id="improve-1" type="checkbox" name="improve-1"/><label class="inline">Colour</label>
+                    <input id="improve-1" type="checkbox" name="improve-1" value="colour"/><label class="inline">Colour</label>
                     <br>
-                    <input id="improve-2" type="checkbox" name="improve-2"/><label class="inline">Text</label>
+                    <input id="improve-2" type="checkbox" name="improve-2" value="text"/><label class="inline">Text</label>
                     <br>
-                    <input id="improve-3" type="checkbox" name="improve-3"/><label class="inline">Layout</label>
+                    <input id="improve-3" type="checkbox" name="improve-3" value="layout"/><label class="inline">Layout</label>
                     <br>
-                    <input id="improve-4" type="checkbox" name="improve-4"/><label class="inline">Functionality</label>
+                    <input id="improve-4" type="checkbox" name="improve-4" value="functionality"/><label class="inline">Functionality</label>
                     <br>
-                    <input id="improve-5" type="checkbox" name="improve-5"/><label class="inline">Other</label>
+                    <input id="improve-5" type="checkbox" name="improve-5" value="other"/><label class="inline">Other</label>
                     <br>
-                    <input id="improve-6" type="checkbox" name="improve-6"/><label class="inline">None</label>
+                    <input id="improve-6" type="checkbox" name="improve-6" value="none"/><label class="inline">None</label>
                     <br>
                 </label>
+                <label>Overall, do you like the design?
+                    <br>
+                    <input id="yes" type="radio" name="yes-no" value="yes"/><label class="inline">Yes</label>
+                    <br>
+                    <input id="no" type="radio" name="yes-no" value="no"/><label class="inline">No</label>
+                </label>
+
                 <label for="suggestions">Any comments or suggestions?
                     <br>
                     <textarea id="suggestions" name="suggestions" rows="3" cols="30" placeholder="I would've liked more colour..."></textarea>
                 </label>
-                <input type="submit" value="Submit"/>
+                <input id="submit" type="submit" value="Submit"/>
             </form>
         </div>
     </body>
