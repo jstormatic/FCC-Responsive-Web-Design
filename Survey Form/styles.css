@@ -41,7 +41,7 @@ h1, p {
 label {
     display: block;
     margin: 1rem 0;
-    margin-bottom: 0.25em;
+    margin-bottom: 0.2em;
     font-family: DashHorizon;
 }
 
@@ -56,7 +56,10 @@ label {
     background-color: rgba(0, 0, 0, 70%);
     margin-right: auto;
     margin-left: auto;
-    padding: 20px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
     max-width: 500px;
 }
 
