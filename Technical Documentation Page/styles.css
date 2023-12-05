@@ -8,15 +8,14 @@
     width: 100%;
     background-color: #62b478;
     color: white;
-    border: 1px solid lightslategray;
+    border: 3px solid lightslategray;
 }
 
 #topbar ul{
     list-style-type: none;
     text-align: right;
-    margin-right: 160px;
+    margin-right: 140px;
 }
-
 
 #sidebar {
     width: 175px; 
@@ -36,7 +35,7 @@
     width: 250px; 
 }
 
-#sidebar ul{
+#sidebar ul {
     list-style-type: none;
     padding: 0;
 }
@@ -52,13 +51,9 @@
     color: #333;
 }
 
-#sidebar a:hover {
+#sidebar a:hover, #topbar a:hover {
     background-color: #98e5ae;
     color: #000;
-}
-
-#sidebar:hover + main, #sidebar:hover + header {
-    margin-left: 290px;
 }
 
 h1 {
@@ -74,14 +69,6 @@ li {
     line-height: 21px;
 }
 
-main, header {
-    margin-left: 220px;
-    padding: 20px;
-    transition: margin-left 0.3s;
-}
-
-
-
 code {
     display: block;
     white-space: pre-line;
@@ -94,3 +81,16 @@ code {
     border-radius: 5px;
     font-family: monospace;
 }
+
+main, header {
+    transition: margin-left 0.3s;
+    margin-left: 220px;
+    padding: 20px;
+}
+
+.topbar-button {
+    display: inline-block;
+    float: right;
+}
+
+
