@@ -94,4 +94,10 @@ main {
     float: right;
 }
 
+@media screen and (min-width: 769px) {
+    p {
+        font-size: large;
+    }
+}
+
 
