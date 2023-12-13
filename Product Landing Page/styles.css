@@ -38,12 +38,17 @@ div {
     margin: 10px;
     border: 1px solid #000;
     padding: 20px;
-
+    position: relative;
 }
 
 .emblem > .emb-header {
     width: 100%;
-    background-color: burlywood;
+    background-color: #649bff;
     padding: 15px 0;
-    
+    position: absolute;
+    top: 0;
+}
+
+.emblem > h3 {
+    margin-top: 40px;
 }
