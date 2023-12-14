@@ -1,3 +1,8 @@
+@font-face {
+    font-family: overpass;
+    src: url(media/overpass-regular.otf);
+}
+
 
 * {
     box-sizing: border-box;
@@ -12,7 +17,7 @@ header {
     position: fixed;
     top: 0;
     padding: 0px 20px;
-
+    z-index: 1;
 }
 
 .logo {
@@ -35,23 +40,25 @@ nav {
     height: 50px;
     display: block;
     justify-content: space-between;
+
 }
 
 
 nav > ul {
     display: flex;
-    margin-left: 1300px;
     padding-inline-start: 0;
+    padding-right: 170px;
+    margin-right: 50px;
     height: 100%;
     align-items: center;
-    
+    justify-content: flex-end;
 }
 
   
 nav > ul > li {
     color: #dfdfe2;
     margin: 0 10px;
-    padding: 0;
+    padding: 0 10px;
     display: block;
     margin-top: -30px;
 }
@@ -64,7 +71,38 @@ nav > ul > li:hover {
 
 #information {
     margin: 90px 50px 0 50px;
+}
 
+.divider {
+    width: 95%;
+    margin-top: 50px;
+}
+
+form {
+    margin-top: 30px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.email {
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 10px auto;
+}
+
+#submit {
+    display: block;
+}
+
+label, span, a {
+    font-size: 14px;
+    font-family: overpass, sans-serif;
+    text-decoration: none;
 }
 
 body {
@@ -75,6 +113,25 @@ body {
 
 h2 {
     text-align: center;
+    margin: 20px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 24px;
+    font-family: 'symphony-cg-regular', sans-serif;
+}
+
+h3 {
+    font-family: overpass, sans-serif;
+}
+
+p {
+    line-height: 24px;
+    font-size: 16px;
+    font-family: overpass, sans-serif;
+}
+
+video {
+    margin-top: 40px;
 }
 
 div {
@@ -88,10 +145,12 @@ div {
     
 }
 
-#shop {
+#items {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .emblem {
@@ -100,11 +159,13 @@ div {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 5px 20px 50px 20px;
+    margin: 10px 15px 50px 15px;
     border: 1px solid #000;
-    padding: 20px;
+    padding: 12px 10px 10px 10px;
     position: relative;
 }
+
+
 
 .emblem > .emb-header {
     width: 100%;
@@ -112,28 +173,59 @@ div {
     padding: 15px 0;
     position: absolute;
     top: 0;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: overpass, sans-serif;
 }
 
 .emblem > h3 {
     margin-top: 40px;
 }
 
-a {
-    text-decoration: none;
-}
+
 
 li {
     list-style-type: none;
+    font-size: 16px;
+    font-family: overpass, sans-serif;
 }
 
+#emblem-img {
+    padding-top: 50px;
+}
 
+input[type="submit"], button {
+
+    display: block;
+    width: 60%;
+    margin: 0.5em auto;
+    height: 2em;
+    font-size: 1.2rem;
+    background-color: #f38ef7;
+    border-color: #f38ef7;
+    min-width: 300px;
+    font-family: overpass, sans-serif;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #649bff;
+    border-color: #649bff;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+#email::placeholder {
+    font-family: overpass, sans-serif;
+}
 
 footer {
     background-color: #2b67d5;
     width: 100%;
     padding: 10px 0;
-    margin: 0;
+    margin-top: 20px;
     text-align: right;
     padding-right: 40px;
 }
+
+
 

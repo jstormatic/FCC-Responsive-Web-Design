@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Landing Page</title>
     <link rel="stylesheet" href="styles.css" />
+    <link href="https://www.dafontfree.net/embed/c3ltcGhvbnktY2ctcmVndWxhciZkYXRhLzQ4L3MvNDc2ODIvU3ltcGhvbnkgQ0cub3Rm" rel="stylesheet" type="text/css"/>
 </head>
 <!---------------------------------------------------------->
 <body>
@@ -13,13 +14,18 @@
         <section class="heading">
             <header id="header">
                 <div class="logo">
-                    <img id="header-img" src="media/udo_orb.gif" alt="spinning udo orb"/>
-                    <img id="header-logo" src="media/UDO_logo_bite_2.png" alt="udo bite logo"/>
+                    <a href="https://twitter.com/FrensRG" target="_blank">
+                        <img id="header-img" src="media/udo_orb.gif" alt="spinning udo orb"/>
+                    </a>
+                    <a href="https://twitter.com/FrensRG" target="_blank">
+                        <img id="header-logo" src="media/UDO_logo_bite_2.png" alt="udo bite logo"/>
+                    </a>
                 </div>
                 <nav id="nav-bar">
+                        
                     <ul>
                         <li>
-                            <a class="nav-link" href="#social-media">
+                            <a class="nav-link" href="https://twitter.com/FrensRG" target="_blank">
                                 Social Media
                             </a>
                         </li>
@@ -38,21 +44,12 @@
             </header>
         </section>
 <!---------------------------------------------------------------->
-        <section>
-            <form method="post" action="https://www.freecodecamp.com/email-submit">
-                <label for="email">
-                    Get in contact for more information (change this, it submits to FCC)
-                    <input id="email" type="email" placeholder="Enter your email address" required/>
-                </label>
-                <input id="submit" type="submit"/>
-            </form>
-        </section>
-<!----------------------------------------------------------------->
         <section id="information">
             <div class="text">
                 <h2 id="introduction">
                     What is Frens Research Group?
                 </h2>
+                <hr>
                 <p class="description">
                     <strong>Frens Research Group (FRG)</strong> is a platform that aims to help all of its members become the most connected builders, traders, and public figures they can be in the Web3 space. The aim of FRG is to develop a Web2-Web3 R&D hub with real impact within the space while providing evolving utility to its members.
                     <br>
@@ -65,21 +62,35 @@
                     <br>
                     We aim to design curated partnerships, and collaborations across nodes, defi, NFTs, and game-fi. This is not where it ends, we want to be a go-to connection of lifestyle benefits for web2 and providing value and benefits to our holders, and also working to provide use-case of NFT's to our partners in web2. Our goal is to curate a paradise of information and value that makes all our members profitable and fulfilled.
                 </p>
+                <hr>
             </div>
         </section>
+<!------------------------------------------------------------------>
+        <section class="form center">
+            <form method="post" action="https://www.freecodecamp.com/email-submit">
+                <label for="email">
+                    Get in contact for more information
+                    <input class="email" id="email" type="email" placeholder="Enter your email address" required/>
+                </label>
+                <input id="submit" type="submit"/>
+            </form>
+        </section>
+<!----------------------------------------------------------------->
         <section>
             <div class="center">
-                <video id="video" controls>
+                <video id="video" controls poster="media/udo_header_img.jpeg">
                     <source src="media/frgxudo_trailer.mp4" type="video/mp4">
                 </video>
             </div>
         </section>
+        <hr class="divider">
         <h2>
             Items
         </h2>
-        <section id="shop">
+        <section id="items">
             <div class="emblem">
                 <div class="emb-header">Analyzer Emblem</div>
+                <img id="emblem-img" src="media/analyser_orb.gif" alt="spinning analyzer orb"/>
                 <h3>100 Guac</h3>
                 <ul>
                     <li>
@@ -93,6 +104,7 @@
             </div>
             <div class="emblem">
                 <div class="emb-header">Builder Emblem</div>
+                <img id="emblem-img" src="media/builder_orb.gif" alt="spinning builder orb"/>
                 <h3>100 Guac</h3>
                 <ul>
                     <li>
@@ -106,6 +118,7 @@
             </div>
             <div class="emblem">
                 <div class="emb-header">Creative Emblem</div>
+                <img id="emblem-img" src="media/creative_orb.gif" alt="spinning creative orb"/>
                 <h3>100 Guac</h3>
                 <ul>
                     <li>
@@ -119,6 +132,7 @@
             </div>
             <div class="emblem">
                 <div class="emb-header">Degen Emblem</div>
+                <img id="emblem-img" src="media/degen_orb.gif" alt="spinning degen orb"/>
                 <h3>100 Guac</h3>
                 <ul>
                     <li>
@@ -132,6 +146,7 @@
             </div>
             <div class="emblem">
                 <div class="emb-header">Fren Emblem</div>
+                <img id="emblem-img" src="media/fren_orb.gif" alt="spinning fren orb"/>
                 <h3>100 Guac</h3>
                 <ul>
                     <li>
@@ -148,7 +163,7 @@
     <footer>
         <ul>
             <li>
-                <a href="">Contact</a>
+                <a href="https://twitter.com/FrensRG" target="_blank">Contact</a>
             </li>
         </ul>
         <span>Designed by <a href="https://github.com/jstormatic" target="_blank"> Jstormatic</a></span>
